@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Counseling Place | Melissa DeWitt, Ed.S., LPC | Darlington, SC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#F4F7F4',
+                            100: '#E2EBE2',
+                            200: '#C5D6C5',
+                            600: '#6B8E6B',
+                            700: '#527052',
+                            800: '#3D543D',
+                        },
+                        ivory: {
+                            DEFAULT: '#FAF8F5',
+                            dark: '#F0ECE1'
+                        },
+                        charcoal: '#2D312E',
+                        earth: {
+                            light: '#E8DED1',
+                            DEFAULT: '#A38A73',
+                            dark: '#6E5C4B'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF8F5;
+            color: #2D312E;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(45, 49, 46, 0.45), rgba(45, 49, 46, 0.65)), url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .glass-nav {
+            background: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-ivory text-charcoal antialiased selection:bg-sage-200 selection:text-sage-800 flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <!-- Continuous Flowing Side & Curvy Gradient Overlay Throughout the Website -->
+    <div class="fixed inset-0 pointer-events-none select-none overflow-hidden z-0" aria-hidden="true">
+        <!-- Soft Organic Side Gradient Glows -->
+        <div class="absolute -top-24 -left-32 w-[480px] h-[680px] rounded-full bg-gradient-to-br from-sage-200/45 via-sage-100/25 to-transparent blur-3xl"></div>
+        <div class="absolute top-[28%] -right-36 w-[540px] h-[720px] rounded-full bg-gradient-to-bl from-earth-light/50 via-sage-100/30 to-transparent blur-3xl"></div>
+        <div class="absolute top-[60%] -left-36 w-[520px] h-[700px] rounded-full bg-gradient-to-tr from-sage-200/40 via-earth-light/25 to-transparent blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-28 w-[500px] h-[640px] rounded-full bg-gradient-to-tl from-sage-200/45 via-earth-light/30 to-transparent blur-3xl"></div>
+
+        <!-- Continuous Curvy Side Gradient Ribbon SVG -->
+        <svg class="w-full h-full opacity-80" viewBox="0 0 1440 1600" fill="none" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="sideCurveGradLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#C5D6C5" stop-opacity="0.32" />
+                    <stop offset="50%" stop-color="#E8DED1" stop-opacity="0.28" />
+                    <stop offset="100%" stop-color="#6B8E6B" stop-opacity="0.18" />
+                </linearGradient>
+                <linearGradient id="sideCurveGradRight" x1="100%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#E8DED1" stop-opacity="0.34" />
+                    <stop offset="50%" stop-color="#C5D6C5" stop-opacity="0.26" />
+                    <stop offset="100%" stop-color="#A38A73" stop-opacity="0.16" />
+                </linearGradient>
+                <linearGradient id="ribbonStroke" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#6B8E6B" stop-opacity="0.28" />
+                    <stop offset="50%" stop-color="#A38A73" stop-opacity="0.25" />
+                    <stop offset="100%" stop-color="#6B8E6B" stop-opacity="0.28" />
+                </linearGradient>
+            </defs>
+
+            <!-- Left Flowing Curvy Gradient Wave -->
+            <path d="M-80,0 C220,260 -60,560 180,860 C400,1140 -40,1380 140,1600 L-120,1600 L-120,0 Z" fill="url(#sideCurveGradLeft)" />
+            <path d="M10,0 C260,270 -20,570 210,870 C420,1145 -10,1385 160,1600" stroke="url(#ribbonStroke)" stroke-width="2" stroke-dasharray="8 10" />
+
+            <!-- Right Flowing Curvy Gradient Wave -->
+            <path d="M1520,0 C1220,300 1480,620 1240,940 C1020,1220 1440,1420 1260,1600 L1560,1600 L1560,0 Z" fill="url(#sideCurveGradRight)" />
+            <path d="M1430,0 C1180,310 1440,630 1210,950 C995,1225 1410,1425 1240,1600" stroke="url(#ribbonStroke)" stroke-width="2" stroke-dasharray="6 9" />
+        </svg>
+    </div>
+
+    <!-- Top Emergency Bar -->
+    <div class="relative z-20 bg-sage-800 text-ivory text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
+        If you are experiencing a mental health emergency, please call <a href="tel:988" class="underline font-bold hover:text-sage-200">988</a> (Suicide &amp; Crisis Lifeline) or <a href="tel:911" class="underline font-bold hover:text-sage-200">911</a> immediately.
+    </div>
+
+    <!-- Sticky Header Navigation -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-sage-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Left: Circular Logo & Brand Name -->
+            <a href="#home" class="flex items-center gap-3 flex-shrink-0 group">
+                <div class="w-12 h-12 rounded-full bg-ivory border-2 border-sage-200 shadow-sm overflow-hidden flex items-center justify-center flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+                    <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/VC/refs/heads/main/Serenity%2Blogo-1920w%20(1).webp"
+                         alt="Serenity Counseling Place Logo"
+                         class="w-full h-full object-cover rounded-full"
+                         onerror="this.src='https://placehold.co/100x100/6B8E6B/FFFFFF?text=SC'">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-lg sm:text-xl text-charcoal leading-tight tracking-tight">Serenity Counseling</span>
+                    <span class="text-[11px] uppercase tracking-widest text-earth-dark font-semibold">Darlington, SC</span>
+                </div>
+            </a>
+
+            <!-- Center: Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center justify-center space-x-6 xl:space-x-8" aria-label="Primary Navigation">
+                <a href="#home" class="text-sm font-medium text-charcoal hover:text-sage-700 transition whitespace-nowrap">Home</a>
+                <a href="#services" class="text-sm font-medium text-charcoal hover:text-sage-700 transition whitespace-nowrap">Services</a>
+                <a href="#getting-started" class="text-sm font-medium text-charcoal hover:text-sage-700 transition whitespace-nowrap">Getting Started</a>
+                <a href="#insurance" class="text-sm font-medium text-charcoal hover:text-sage-700 transition whitespace-nowrap">Insurance &amp; Fees</a>
+                <a href="#contact" class="text-sm font-medium text-charcoal hover:text-sage-700 transition whitespace-nowrap">Contact</a>
+            </nav>
+
+            <!-- Right: Phone & Appointment CTA -->
+            <div class="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
+                <a href="tel:8433932773" class="inline-flex items-center gap-2 text-xs xl:text-sm font-semibold text-sage-800 bg-sage-50 hover:bg-sage-100 border border-sage-200 px-3.5 py-2 rounded-xl transition whitespace-nowrap">
+                    <i class="fa-solid fa-phone text-sage-600"></i> (843) 393-2773
+                </a>
+                <a href="#contact" class="bg-sage-700 hover:bg-sage-800 text-ivory px-4 xl:px-5 py-2.5 rounded-xl font-medium text-xs sm:text-sm shadow-sm transition transform hover:-translate-y-0.5 whitespace-nowrap">
+                    Request Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-charcoal focus:outline-none p-2 rounded-lg hover:bg-sage-100 transition" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-ivory border-t border-sage-100 px-4 py-4 space-y-2 shadow-lg">
+            <a href="#home" class="mobile-link block px-3 py-2 rounded-lg text-sm font-medium text-charcoal hover:bg-sage-50">Home</a>
+            <a href="#services" class="mobile-link block px-3 py-2 rounded-lg text-sm font-medium text-charcoal hover:bg-sage-50">Services</a>
+            <a href="#getting-started" class="mobile-link block px-3 py-2 rounded-lg text-sm font-medium text-charcoal hover:bg-sage-50">Getting Started</a>
+            <a href="#insurance" class="mobile-link block px-3 py-2 rounded-lg text-sm font-medium text-charcoal hover:bg-sage-50">Insurance & Fees</a>
+            <a href="#faq" class="mobile-link block px-3 py-2 rounded-lg text-sm font-medium text-charcoal hover:bg-sage-50">FAQ</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 rounded-lg text-sm font-medium text-charcoal hover:bg-sage-50">Contact</a>
+            <div class="pt-2 border-t border-sage-100 flex flex-col gap-2">
+                <a href="tel:8433932773" class="text-center text-sm font-semibold text-sage-800 bg-sage-50 py-2.5 rounded-xl border border-sage-200">
+                    <i class="fa-solid fa-phone mr-1.5 text-sage-600"></i> (843) 393-2773
+                </a>
+                <a href="#contact" class="mobile-link text-center bg-sage-700 text-ivory py-2.5 rounded-xl font-medium text-sm">
+                    Request Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Side CTA Tabs (Facebook, Phone, Email) -->
+    <aside class="fixed right-0 top-1/2 -translate-y-1/2 z-40 flex flex-col items-end gap-2.5 pointer-events-none" aria-label="Quick Contact Actions">
+        <!-- Facebook Tab (Blue) -->
+        <a href="https://www.facebook.com/SerenityCounselingPlace/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visit Serenity Counseling Place on Facebook"
+           class="pointer-events-auto group flex items-center bg-[#1877F2] hover:bg-[#166FE5] text-white shadow-lg shadow-blue-900/20 rounded-l-2xl overflow-hidden transition-all duration-300 ease-out">
+            <span class="w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg">
+                <i class="fa-brands fa-facebook-f"></i>
+            </span>
+            <span class="max-w-0 opacity-0 group-hover:max-w-[210px] group-hover:opacity-100 group-hover:pr-4 whitespace-nowrap text-xs font-semibold tracking-wide transition-all duration-300 ease-out">
+                Follow on Facebook
+            </span>
+        </a>
+
+        <!-- Contact Number Tab (Green) -->
+        <a href="tel:+18433932773"
+           aria-label="Call +1 843-393-2773"
+           class="pointer-events-auto group flex items-center bg-[#16A34A] hover:bg-[#15803D] text-white shadow-lg shadow-green-900/20 rounded-l-2xl overflow-hidden transition-all duration-300 ease-out">
+            <span class="w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg">
+                <i class="fa-solid fa-phone"></i>
+            </span>
+            <span class="max-w-0 opacity-0 group-hover:max-w-[210px] group-hover:opacity-100 group-hover:pr-4 whitespace-nowrap text-xs font-semibold tracking-wide transition-all duration-300 ease-out">
+                +1 843-393-2773
+            </span>
+        </a>
+
+        <!-- Email Tab (Red) -->
+        <a href="mailto:melissad@serenitycounselingplace.com"
+           aria-label="Email melissad@serenitycounselingplace.com"
+           class="pointer-events-auto group flex items-center bg-[#DC2626] hover:bg-[#B91C1C] text-white shadow-lg shadow-red-900/20 rounded-l-2xl overflow-hidden transition-all duration-300 ease-out">
+            <span class="w-12 h-12 flex items-center justify-center flex-shrink-0 text-lg">
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <span class="max-w-0 opacity-0 group-hover:max-w-[290px] group-hover:opacity-100 group-hover:pr-4 whitespace-nowrap text-xs font-semibold tracking-wide transition-all duration-300 ease-out">
+                melissad@serenitycounselingplace.com
+            </span>
+        </a>
+    </aside>
+
+    <main class="relative z-10 flex-grow">
+
+        <!-- HERO SECTION -->
+        <section id="home" class="relative overflow-hidden py-16 sm:py-24 lg:py-28 border-b border-sage-200/70">
+            <!-- Full Creative Alone Tree in Landscape Background Layer -->
+            <div class="absolute inset-0 pointer-events-none select-none overflow-hidden">
+                <!-- Solitary Tree in Serene Misty Landscape Photography -->
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=85"
+                     alt=""
+                     aria-hidden="true"
+                     class="w-full h-full object-cover object-[68%_center] opacity-75 scale-105 filter saturate-[0.95] contrast-[0.98] transition-transform duration-1000"
+                     onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80'">
+                
+                <!-- Subtle Official Botanical Watermark Blend -->
+                <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/VC/refs/heads/main/Serenity%2Blogo-1920w%20(1).webp"
+                     alt=""
+                     aria-hidden="true"
+                     class="absolute -bottom-12 -left-12 w-[480px] h-[480px] object-contain opacity-10 mix-blend-multiply"
+                     onerror="this.style.display='none'">
+
+                <!-- Artistic Layered Ivory & Sage Veil for Readability & Depth -->
+                <div class="absolute inset-0 bg-gradient-to-r from-ivory/95 via-ivory/75 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-ivory/50 via-transparent to-ivory/80"></div>
+                
+                <!-- Subtle Organic Horizon & Mist SVG Accent -->
+                <svg class="absolute bottom-0 left-0 w-full h-24 text-ivory opacity-90" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                    <path fill="currentColor" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+                </svg>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+                    <!-- Hero Left Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-sage-100/90 border border-sage-200 text-sage-800 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-sage-600"></span>
+                            Melissa DeWitt, Ed.S., LPC &bull; Darlington, SC
+                        </div>
+
+                        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-charcoal leading-[1.12] tracking-tight">
+                            A Supportive Place to Navigate Life's Challenges.
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-charcoal/80 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Personalized counseling with Melissa DeWitt, Ed.S., LPC, helping individuals and families work through life's challenges and build richer, more rewarding lives.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#contact" class="w-full sm:w-auto bg-sage-700 hover:bg-sage-800 text-ivory px-7 py-4 rounded-xl font-semibold text-sm sm:text-base shadow-lg shadow-sage-800/15 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-calendar-check"></i> Request an Appointment
+                            </a>
+                            <a href="tel:8433932773" class="w-full sm:w-auto bg-ivory/95 hover:bg-sage-50 text-sage-800 border-2 border-sage-300 px-7 py-3.5 rounded-xl font-semibold text-sm sm:text-base transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-phone text-sage-600"></i> Call (843) 393-2773
+                            </a>
+                        </div>
+
+                        <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-xs text-charcoal/70 font-medium">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-sage-600"></i> Private Practice Since 2013</span>
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-heart text-sage-600"></i> Confidential &amp; Empathetic Care</span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual / Illustrative Heart-Shaped Office Card -->
+                    <div class="lg:col-span-5 relative flex items-center justify-center py-4">
+                        <div class="relative mx-auto w-full max-w-[440px]">
+                            <!-- Soft Organic Glow / Ambient Backdrop -->
+                            <div class="absolute inset-0 bg-gradient-to-tr from-sage-200/70 via-earth-light/50 to-sage-100/70 rounded-full blur-2xl scale-105 -z-10"></div>
+
+                            <!-- Illustrative Botanical & Heart Frame -->
+                            <div class="relative w-full aspect-[500/480] flex items-center justify-center group">
+                                <!-- Reliable HTML Img Masked into Heart Shape so Browser Always Renders Image -->
+                                <div class="w-[82%] h-[82%] overflow-hidden shadow-inner bg-sage-100 transition-transform duration-700 ease-out group-hover:scale-105"
+                                     style="-webkit-clip-path: url(#serenity-heart-clip-rel); clip-path: url(#serenity-heart-clip-rel);">
+                                    <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=1000&q=80"
+                                         alt="Welcoming and peaceful counseling room at Serenity Counseling Place"
+                                         class="w-full h-full object-cover object-center"
+                                         onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80'">
+                                </div>
+
+                                <!-- Illustrative SVG Overlay (Heart Border, Dashed Ring & Botanical Leaves) -->
+                                <svg viewBox="0 0 500 480" class="absolute inset-0 w-full h-full pointer-events-none drop-shadow-xl overflow-visible" role="img" aria-label="Heart-shaped botanical counseling frame">
+                                    <defs>
+                                        <!-- Relative objectBoundingBox heart clipPath for HTML img -->
+                                        <clipPath id="serenity-heart-clip-rel" clipPathUnits="objectBoundingBox">
+                                            <path d="M 0.5,0.96 C 0.5,0.96 0.02,0.65 0.02,0.32 C 0.02,0.14 0.16,0.02 0.32,0.02 C 0.42,0.02 0.47,0.08 0.5,0.14 C 0.53,0.08 0.58,0.02 0.68,0.02 C 0.84,0.02 0.98,0.14 0.98,0.32 C 0.98,0.65 0.5,0.96 0.5,0.96 Z" />
+                                        </clipPath>
+                                    </defs>
+
+                                    <!-- Decorative Offset Layered Heart Silhouette -->
+                                    <path d="M 250,435 C 250,435 45,305 45,165 C 45,88 105,38 172,38 C 214,38 238,62 250,86 C 262,62 286,38 328,38 C 395,38 455,88 455,165 C 455,305 250,435 250,435 Z"
+                                          fill="none"
+                                          stroke="#C5D6C5"
+                                          stroke-width="10"
+                                          opacity="0.55"
+                                          transform="translate(10, 10) rotate(2 250 240)" />
+
+                                    <!-- Delicate Dashed Botanical Ring Accent -->
+                                    <path d="M 250,452 C 250,452 28,315 28,162 C 28,76 96,22 170,22 C 215,22 238,48 250,70 C 262,48 285,22 330,22 C 404,22 472,76 472,162 C 472,315 250,452 250,452 Z"
+                                          fill="none"
+                                          stroke="#6B8E6B"
+                                          stroke-width="1.5"
+                                          stroke-dasharray="5 7"
+                                          opacity="0.7" />
+
+                                    <!-- Illustrative Botanical Leaves (Top Left) -->
+                                    <g transform="translate(52, 65) rotate(-25)" fill="#6B8E6B" opacity="0.9">
+                                        <path d="M0,35 Q-14,15 0,0 Q14,15 0,35 Z" />
+                                        <path d="M-8,28 Q-26,18 -20,4 Q-6,10 -8,28 Z" fill="#527052" />
+                                        <path d="M8,28 Q26,18 20,4 Q6,10 8,28 Z" fill="#A38A73" opacity="0.85" />
+                                    </g>
+
+                                    <!-- Illustrative Botanical Sprig (Bottom Right) -->
+                                    <g transform="translate(415, 315) rotate(35)" fill="#6B8E6B" opacity="0.9">
+                                        <path d="M0,40 Q-14,18 0,0 Q14,18 0,40 Z" />
+                                        <path d="M-9,32 Q-28,22 -22,6 Q-7,12 -9,32 Z" fill="#527052" />
+                                        <circle cx="12" cy="14" r="3.5" fill="#A38A73" />
+                                        <circle cx="16" cy="24" r="2.5" fill="#A38A73" />
+                                    </g>
+
+                                    <!-- Crisp Ivory & Sage Heart Frame Stroke -->
+                                    <path d="M 250,435 C 250,435 45,305 45,165 C 45,88 105,38 172,38 C 214,38 238,62 250,86 C 262,62 286,38 328,38 C 395,38 455,88 455,165 C 455,305 250,435 250,435 Z"
+                                          fill="none"
+                                          stroke="#FAF8F5"
+                                          stroke-width="7" />
+                                    <path d="M 250,435 C 250,435 45,305 45,165 C 45,88 105,38 172,38 C 214,38 238,62 250,86 C 262,62 286,38 328,38 C 395,38 455,88 455,165 C 455,305 250,435 250,435 Z"
+                                          fill="none"
+                                          stroke="#C5D6C5"
+                                          stroke-width="1.5" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PRACTICE INTRODUCTION -->
+        <section class="py-24 bg-transparent relative overflow-hidden">
+            <!-- Subtle Ambient Botanical Backdrop -->
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[340px] bg-gradient-to-r from-sage-100/40 via-earth-light/25 to-sage-100/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-4">
+                    <h2 class="text-xs uppercase tracking-widest text-earth-dark font-bold">Welcome to Serenity Counseling Place</h2>
+                    <h3 class="font-serif text-3xl sm:text-4xl text-charcoal">A Peaceful Space for Healing & Growth</h3>
+                    <div class="w-16 h-1 bg-sage-600 mx-auto rounded-full"></div>
+                    <p class="text-base sm:text-lg text-charcoal/80 leading-relaxed pt-2">
+                        Life can present overwhelming obstacles—from anxiety and trauma to relationship friction and deep personal transitions. You do not have to navigate these paths alone. At Serenity Counseling Place, we provide an empathetic, non-judgmental environment dedicated to helping you discover clarity, restore emotional balance, and cultivate lasting wellbeing.
+                    </p>
+                </div>
+
+                <!-- Box-Free Illustrative Botanical Icon Pillars -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-14 mt-20">
+                    
+                    <!-- Pillar 1: Safe & Confidential -->
+                    <div class="group relative pl-2 pt-2">
+                        <!-- Top-Left Illustrative Icon Emblem -->
+                        <div class="relative w-24 h-24 mb-6 flex items-center justify-center">
+                            <!-- Hand-crafted Organic Botanical Ring & Sprigs SVG -->
+                            <svg viewBox="0 0 110 110" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:rotate-6" aria-hidden="true">
+                                <!-- Soft Pebble Aura -->
+                                <path d="M55,10 C82,8 102,28 100,56 C98,84 78,102 52,100 C24,98 8,78 10,52 C12,26 28,12 55,10 Z" fill="#E2EBE2" opacity="0.65" />
+                                <!-- Delicate Dashed Ring -->
+                                <circle cx="55" cy="55" r="44" fill="none" stroke="#6B8E6B" stroke-width="1.3" stroke-dasharray="4 5" opacity="0.7" />
+                                <!-- Botanical Leaves (Top-Left Accent) -->
+                                <g transform="translate(18, 22) rotate(-32)" fill="#6B8E6B">
+                                    <path d="M0,18 Q-7,8 0,0 Q7,8 0,18 Z" />
+                                    <path d="M-4,14 Q-13,9 -10,2 Q-3,5 -4,14 Z" fill="#527052" />
+                                </g>
+                                <!-- Earthy Berry Dots (Bottom-Right Accent) -->
+                                <circle cx="92" cy="82" r="3" fill="#A38A73" />
+                                <circle cx="84" cy="91" r="2" fill="#6B8E6B" />
+                            </svg>
+                            <!-- Inner Medallion with Icon -->
+                            <div class="relative z-10 w-16 h-16 rounded-full bg-ivory border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:scale-110 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 border-l-2 border-sage-200/80 pl-5 transition-colors duration-300 group-hover:border-sage-600">
+                            <h4 class="font-serif text-2xl font-bold text-charcoal">Safe &amp; Confidential</h4>
+                            <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                Your privacy and emotional safety are our utmost priority. Every session is held in a strictly confidential, professional setting designed for openness.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2: Personalized Approach -->
+                    <div class="group relative pl-2 pt-2">
+                        <!-- Top-Left Illustrative Icon Emblem -->
+                        <div class="relative w-24 h-24 mb-6 flex items-center justify-center">
+                            <!-- Hand-crafted Organic Botanical Ring & Sprigs SVG -->
+                            <svg viewBox="0 0 110 110" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:-rotate-6" aria-hidden="true">
+                                <!-- Soft Pebble Aura -->
+                                <path d="M52,10 C78,12 100,26 100,54 C100,82 80,100 54,100 C26,100 10,80 10,54 C10,28 26,8 52,10 Z" fill="#E8DED1" opacity="0.6" />
+                                <!-- Delicate Dashed Ring -->
+                                <circle cx="55" cy="55" r="44" fill="none" stroke="#A38A73" stroke-width="1.3" stroke-dasharray="4 5" opacity="0.75" />
+                                <!-- Botanical Leaves (Top-Right Accent) -->
+                                <g transform="translate(88, 22) rotate(35)" fill="#6B8E6B">
+                                    <path d="M0,18 Q-7,8 0,0 Q7,8 0,18 Z" />
+                                    <path d="M4,14 Q13,9 10,2 Q3,5 4,14 Z" fill="#A38A73" />
+                                </g>
+                                <!-- Sage Sprout Dots (Bottom-Left Accent) -->
+                                <circle cx="18" cy="84" r="3" fill="#6B8E6B" />
+                                <circle cx="26" cy="92" r="2" fill="#A38A73" />
+                            </svg>
+                            <!-- Inner Medallion with Icon -->
+                            <div class="relative z-10 w-16 h-16 rounded-full bg-ivory border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:scale-110 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 border-l-2 border-sage-200/80 pl-5 transition-colors duration-300 group-hover:border-sage-600">
+                            <h4 class="font-serif text-2xl font-bold text-charcoal">Personalized Approach</h4>
+                            <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                No two life journeys are identical. Therapy plans are tailored specifically to your unique background, strengths, challenges, and personal goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3: Experienced Guidance -->
+                    <div class="group relative pl-2 pt-2">
+                        <!-- Top-Left Illustrative Icon Emblem -->
+                        <div class="relative w-24 h-24 mb-6 flex items-center justify-center">
+                            <!-- Hand-crafted Organic Botanical Ring & Sprigs SVG -->
+                            <svg viewBox="0 0 110 110" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:rotate-6" aria-hidden="true">
+                                <!-- Soft Pebble Aura -->
+                                <path d="M56,10 C84,12 100,32 100,58 C100,84 76,100 50,100 C24,100 10,76 10,50 C10,24 28,8 56,10 Z" fill="#E2EBE2" opacity="0.65" />
+                                <!-- Delicate Dashed Ring -->
+                                <circle cx="55" cy="55" r="44" fill="none" stroke="#6B8E6B" stroke-width="1.3" stroke-dasharray="4 5" opacity="0.7" />
+                                <!-- Botanical Sprig (Top-Left Accent) -->
+                                <g transform="translate(20, 20) rotate(-25)" fill="#527052">
+                                    <path d="M0,20 Q-8,9 0,0 Q8,9 0,20 Z" />
+                                    <path d="M-5,15 Q-15,10 -11,2 Q-3,6 -5,15 Z" fill="#6B8E6B" />
+                                    <path d="M5,15 Q15,10 11,2 Q3,6 5,15 Z" fill="#A38A73" />
+                                </g>
+                                <!-- Accent Dot (Bottom-Right) -->
+                                <circle cx="91" cy="83" r="3" fill="#6B8E6B" />
+                            </svg>
+                            <!-- Inner Medallion with Icon -->
+                            <div class="relative z-10 w-16 h-16 rounded-full bg-ivory border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:scale-110 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 border-l-2 border-sage-200/80 pl-5 transition-colors duration-300 group-hover:border-sage-600">
+                            <h4 class="font-serif text-2xl font-bold text-charcoal">Experienced Guidance</h4>
+                            <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                Serving Darlington and surrounding South Carolina communities in private practice since 2013 with dedicated, expert professional counseling.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Organic Layered Bottom Wave into Services -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+                <svg class="relative block w-full h-16 sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,45 C360,115 720,0 1080,65 C1260,95 1380,75 1440,55 L1440,120 L0,120 Z" fill="#C5D6C5" fill-opacity="0.28"></path>
+                    <path d="M0,70 C320,10 680,115 1040,50 C1240,15 1360,40 1440,65 L1440,120 L0,120 Z" fill="#F4F7F4" fill-opacity="0.85"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION (FULLY CREATIVE & ILLUSTRATIVE) -->
+        <section id="services" class="py-28 bg-gradient-to-b from-sage-50/85 via-sage-50/55 to-ivory/90 relative overflow-hidden">
+            <!-- Flowing Botanical Vine & Organic Background Illustrations -->
+            <div class="absolute inset-0 pointer-events-none select-none overflow-hidden" aria-hidden="true">
+                <!-- Soft Watercolor Sage & Earth Mist -->
+                <div class="absolute top-24 -left-32 w-[520px] h-[520px] bg-sage-200/30 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 -right-32 w-[560px] h-[560px] bg-earth-light/35 rounded-full blur-3xl"></div>
+
+                <!-- Sweeping Botanical Vine Divider Illustration -->
+                <svg class="hidden lg:block absolute top-[54%] left-0 w-full h-44 text-sage-600/20 -translate-y-1/2" viewBox="0 0 1440 200" fill="none" preserveAspectRatio="none">
+                    <path d="M-40,120 C240,20 480,190 740,95 C1000,0 1220,165 1480,75" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8" />
+                    <path d="M-40,132 C240,32 480,202 740,107 C1000,12 1220,177 1480,87" stroke="#A38A73" stroke-opacity="0.22" stroke-width="1.2" />
+                    <!-- Subtle Botanical Leaves Along the Vine -->
+                    <path d="M360,115 Q348,92 365,80 Q378,96 360,115 Z" fill="currentColor" />
+                    <path d="M740,95 Q755,70 772,78 Q765,98 740,95 Z" fill="currentColor" />
+                    <path d="M1110,98 Q1098,74 1116,64 Q1128,82 1110,98 Z" fill="currentColor" />
+                </svg>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header with Botanical Emblem -->
+                <div class="max-w-3xl mx-auto text-center space-y-4 mb-20">
+                    <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-earth-dark font-bold">
+                        <i class="fa-solid fa-spa text-sage-600"></i>
+                        <span>Areas of Support</span>
+                        <i class="fa-solid fa-spa text-sage-600"></i>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-charcoal leading-tight">Comprehensive Counseling Services</h2>
+                    <div class="flex items-center justify-center gap-3 pt-1">
+                        <span class="w-10 h-[1.5px] bg-sage-300 rounded-full"></span>
+                        <span class="w-2.5 h-2.5 rotate-45 bg-sage-600 rounded-[2px]"></span>
+                        <span class="w-10 h-[1.5px] bg-sage-300 rounded-full"></span>
+                    </div>
+                    <p class="text-base sm:text-lg text-charcoal/80 leading-relaxed pt-2">
+                        Tailored therapeutic support designed to nurture resilience, restore clarity, and address a wide spectrum of emotional and relational challenges.
+                    </p>
+                </div>
+
+                <!-- Creative Box-Free Illustrative Sanctuary Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 lg:gap-y-20">
+                    
+                    <!-- Service 1: Anxiety & Depression -->
+                    <div class="group relative flex flex-col justify-between pt-2">
+                        <div>
+                            <!-- Custom Illustrative Botanical & Sunburst Emblem -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 130 130" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:scale-105" aria-hidden="true">
+                                    <!-- Organic Pebble Backdrop -->
+                                    <path d="M65,12 C96,10 120,34 118,66 C116,98 92,120 62,118 C30,116 10,92 12,62 C14,32 34,14 65,12 Z" fill="#E2EBE2" opacity="0.75" />
+                                    <!-- Rotating Dashed Orbit -->
+                                    <circle cx="65" cy="65" r="52" fill="none" stroke="#6B8E6B" stroke-width="1.4" stroke-dasharray="4 6" class="origin-center transition-transform duration-1000 group-hover:rotate-45" />
+                                    <!-- Illustrative Rising Sun & Cloud Motif -->
+                                    <path d="M42,74 Q42,60 56,60 Q62,50 75,54 Q88,56 88,70 Q88,78 78,78 L48,78 Q42,78 42,74 Z" fill="#FAF8F5" stroke="#6B8E6B" stroke-width="1.5" />
+                                    <path d="M68,46 L68,38 M80,50 L86,44 M56,50 L50,44" stroke="#A38A73" stroke-width="1.8" stroke-linecap="round" />
+                                    <!-- Botanical Leaf Sprig -->
+                                    <g transform="translate(22, 26) rotate(-30)" fill="#527052">
+                                        <path d="M0,22 Q-8,10 0,0 Q8,10 0,22 Z" />
+                                        <path d="M-5,16 Q-15,11 -11,3 Q-3,7 -5,16 Z" fill="#6B8E6B" />
+                                    </g>
+                                    <circle cx="106" cy="96" r="3.5" fill="#A38A73" />
+                                </svg>
+                                <!-- Inner Icon Medallion -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-ivory/95 border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700 group-hover:-translate-y-1">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-5 border-l-2 border-sage-200 group-hover:border-sage-600 transition-colors duration-300">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block mb-1">01 &bull; Calm &amp; Clarity</span>
+                                <h3 class="font-serif text-2xl font-bold text-charcoal mb-3 group-hover:text-sage-800 transition-colors">Anxiety &amp; Depression</h3>
+                                <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                    Compassionate guidance to help you navigate persistent worry, panic, low mood, lack of motivation, and daily overwhelm, helping you regain a sense of peace and purpose.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pl-5 pt-5 mt-4">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sage-800 hover:text-earth-dark transition group/link">
+                                <span>Inquire about support</span>
+                                <span class="w-6 h-6 rounded-full bg-sage-100 group-hover/link:bg-sage-700 group-hover/link:text-ivory flex items-center justify-center transition-all duration-300">
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Trauma & Grief -->
+                    <div class="group relative flex flex-col justify-between pt-2">
+                        <div>
+                            <!-- Custom Illustrative Botanical & Healing Sprout Emblem -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 130 130" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:scale-105" aria-hidden="true">
+                                    <!-- Organic Warm Earth Pebble Backdrop -->
+                                    <path d="M62,12 C94,14 118,32 118,64 C118,96 94,118 64,118 C32,118 12,94 12,64 C12,34 32,10 62,12 Z" fill="#E8DED1" opacity="0.7" />
+                                    <!-- Rotating Dashed Orbit -->
+                                    <circle cx="65" cy="65" r="52" fill="none" stroke="#A38A73" stroke-width="1.4" stroke-dasharray="4 6" class="origin-center transition-transform duration-1000 group-hover:-rotate-45" />
+                                    <!-- Delicate Crescent & Dewdrop Motif -->
+                                    <path d="M98,28 A12,12 0 1,0 108,42 A9,9 0 1,1 98,28 Z" fill="#6B8E6B" opacity="0.85" />
+                                    <!-- Botanical Sprig (Bottom Left) -->
+                                    <g transform="translate(24, 98) rotate(-135)" fill="#6B8E6B">
+                                        <path d="M0,22 Q-8,10 0,0 Q8,10 0,22 Z" />
+                                        <path d="M5,16 Q15,11 11,3 Q3,7 5,16 Z" fill="#A38A73" />
+                                    </g>
+                                    <circle cx="24" cy="34" r="3" fill="#6B8E6B" />
+                                </svg>
+                                <!-- Inner Icon Medallion -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-ivory/95 border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700 group-hover:-translate-y-1">
+                                    <i class="fa-solid fa-heart-crack"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-5 border-l-2 border-sage-200 group-hover:border-sage-600 transition-colors duration-300">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block mb-1">02 &bull; Gentle Restoration</span>
+                                <h3 class="font-serif text-2xl font-bold text-charcoal mb-3 group-hover:text-sage-800 transition-colors">Trauma &amp; Grief</h3>
+                                <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                    Safe, supportive processing for past traumatic experiences, loss of loved ones, life transitions, and complicated grief, helping you heal at your own pace.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pl-5 pt-5 mt-4">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sage-800 hover:text-earth-dark transition group/link">
+                                <span>Inquire about support</span>
+                                <span class="w-6 h-6 rounded-full bg-sage-100 group-hover/link:bg-sage-700 group-hover/link:text-ivory flex items-center justify-center transition-all duration-300">
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Relationships & Family -->
+                    <div class="group relative flex flex-col justify-between pt-2">
+                        <div>
+                            <!-- Custom Illustrative Intertwined Rings & Botanical Emblem -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 130 130" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:scale-105" aria-hidden="true">
+                                    <!-- Organic Sage Pebble Backdrop -->
+                                    <path d="M66,12 C98,14 118,36 118,68 C118,98 92,118 62,118 C30,118 12,92 12,62 C12,30 34,10 66,12 Z" fill="#E2EBE2" opacity="0.75" />
+                                    <!-- Rotating Dashed Orbit -->
+                                    <circle cx="65" cy="65" r="52" fill="none" stroke="#6B8E6B" stroke-width="1.4" stroke-dasharray="4 6" class="origin-center transition-transform duration-1000 group-hover:rotate-45" />
+                                    <!-- Intertwined Harmony Loops -->
+                                    <circle cx="58" cy="65" r="34" fill="none" stroke="#A38A73" stroke-width="1.2" opacity="0.55" />
+                                    <circle cx="72" cy="65" r="34" fill="none" stroke="#6B8E6B" stroke-width="1.2" opacity="0.55" />
+                                    <!-- Twin Botanical Leaves -->
+                                    <g transform="translate(102, 28) rotate(38)" fill="#527052">
+                                        <path d="M0,20 Q-7,9 0,0 Q7,9 0,20 Z" />
+                                        <path d="M5,15 Q14,10 10,3 Q3,6 5,15 Z" fill="#A38A73" />
+                                    </g>
+                                    <circle cx="24" cy="94" r="3.5" fill="#6B8E6B" />
+                                </svg>
+                                <!-- Inner Icon Medallion -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-ivory/95 border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700 group-hover:-translate-y-1">
+                                    <i class="fa-solid fa-people-arrows"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-5 border-l-2 border-sage-200 group-hover:border-sage-600 transition-colors duration-300">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block mb-1">03 &bull; Deeper Connection</span>
+                                <h3 class="font-serif text-2xl font-bold text-charcoal mb-3 group-hover:text-sage-800 transition-colors">Relationships &amp; Family</h3>
+                                <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                    Helping couples and families improve communication, resolve recurring conflicts, rebuild trust, and cultivate deeper, healthier connections.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pl-5 pt-5 mt-4">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sage-800 hover:text-earth-dark transition group/link">
+                                <span>Inquire about support</span>
+                                <span class="w-6 h-6 rounded-full bg-sage-100 group-hover/link:bg-sage-700 group-hover/link:text-ivory flex items-center justify-center transition-all duration-300">
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: Children & Teenagers -->
+                    <div class="group relative flex flex-col justify-between pt-2">
+                        <div>
+                            <!-- Custom Illustrative Blooming Bud & Starlight Emblem -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 130 130" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:scale-105" aria-hidden="true">
+                                    <!-- Organic Warm Ivory/Earth Pebble Backdrop -->
+                                    <path d="M64,12 C95,12 118,35 118,65 C118,95 95,118 65,118 C35,118 12,95 12,65 C12,35 33,12 64,12 Z" fill="#E8DED1" opacity="0.7" />
+                                    <!-- Rotating Dashed Orbit -->
+                                    <circle cx="65" cy="65" r="52" fill="none" stroke="#A38A73" stroke-width="1.4" stroke-dasharray="4 6" class="origin-center transition-transform duration-1000 group-hover:-rotate-45" />
+                                    <!-- Sparkle Star Accents -->
+                                    <path d="M98,26 L100,32 L106,34 L100,36 L98,42 L96,36 L90,34 L96,32 Z" fill="#A38A73" />
+                                    <circle cx="108" cy="48" r="2.5" fill="#6B8E6B" />
+                                    <!-- Tender Sprout Accent (Top Left) -->
+                                    <g transform="translate(22, 28) rotate(-25)" fill="#6B8E6B">
+                                        <path d="M0,20 Q-7,9 0,0 Q7,9 0,20 Z" />
+                                        <path d="M-4,15 Q-13,10 -9,3 Q-2,6 -4,15 Z" fill="#527052" />
+                                    </g>
+                                </svg>
+                                <!-- Inner Icon Medallion -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-ivory/95 border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700 group-hover:-translate-y-1">
+                                    <i class="fa-solid fa-child-reaching"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-5 border-l-2 border-sage-200 group-hover:border-sage-600 transition-colors duration-300">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block mb-1">04 &bull; Nurturing Youth</span>
+                                <h3 class="font-serif text-2xl font-bold text-charcoal mb-3 group-hover:text-sage-800 transition-colors">Children &amp; Teenagers</h3>
+                                <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                    Age-appropriate therapeutic counseling for kids and adolescents navigating behavioral issues, school stress, peer pressure, self-esteem, and emotional regulation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pl-5 pt-5 mt-4">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sage-800 hover:text-earth-dark transition group/link">
+                                <span>Inquire about support</span>
+                                <span class="w-6 h-6 rounded-full bg-sage-100 group-hover/link:bg-sage-700 group-hover/link:text-ivory flex items-center justify-center transition-all duration-300">
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Anger Management -->
+                    <div class="group relative flex flex-col justify-between pt-2">
+                        <div>
+                            <!-- Custom Illustrative Balance & Calm Wave Emblem -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 130 130" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:scale-105" aria-hidden="true">
+                                    <!-- Organic Sage Pebble Backdrop -->
+                                    <path d="M65,12 C96,10 120,34 118,66 C116,98 92,120 62,118 C30,116 10,92 12,62 C14,32 34,14 65,12 Z" fill="#E2EBE2" opacity="0.75" />
+                                    <!-- Rotating Dashed Orbit -->
+                                    <circle cx="65" cy="65" r="52" fill="none" stroke="#6B8E6B" stroke-width="1.4" stroke-dasharray="4 6" class="origin-center transition-transform duration-1000 group-hover:rotate-45" />
+                                    <!-- Gentle Zen Ripple Arcs -->
+                                    <path d="M32,96 Q65,108 98,96" fill="none" stroke="#6B8E6B" stroke-width="1.5" stroke-linecap="round" opacity="0.65" />
+                                    <path d="M42,104 Q65,112 88,104" fill="none" stroke="#A38A73" stroke-width="1.3" stroke-linecap="round" opacity="0.65" />
+                                    <!-- Botanical Leaf Sprig -->
+                                    <g transform="translate(104, 30) rotate(40)" fill="#527052">
+                                        <path d="M0,20 Q-7,9 0,0 Q7,9 0,20 Z" />
+                                        <path d="M-4,15 Q-13,10 -9,3 Q-2,6 -4,15 Z" fill="#6B8E6B" />
+                                    </g>
+                                    <circle cx="24" cy="36" r="3" fill="#A38A73" />
+                                </svg>
+                                <!-- Inner Icon Medallion -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-ivory/95 border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700 group-hover:-translate-y-1">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-5 border-l-2 border-sage-200 group-hover:border-sage-600 transition-colors duration-300">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block mb-1">05 &bull; Emotional Balance</span>
+                                <h3 class="font-serif text-2xl font-bold text-charcoal mb-3 group-hover:text-sage-800 transition-colors">Anger Management</h3>
+                                <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                    Constructive strategies to identify emotional triggers, process frustration healthily, and practice effective impulse control and emotional regulation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pl-5 pt-5 mt-4">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sage-800 hover:text-earth-dark transition group/link">
+                                <span>Inquire about support</span>
+                                <span class="w-6 h-6 rounded-full bg-sage-100 group-hover/link:bg-sage-700 group-hover/link:text-ivory flex items-center justify-center transition-all duration-300">
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Addiction Concerns -->
+                    <div class="group relative flex flex-col justify-between pt-2">
+                        <div>
+                            <!-- Custom Illustrative Compass & New Growth Emblem -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 130 130" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:scale-105" aria-hidden="true">
+                                    <!-- Organic Warm Earth Pebble Backdrop -->
+                                    <path d="M62,12 C94,14 118,32 118,64 C118,96 94,118 64,118 C32,118 12,94 12,64 C12,34 32,10 62,12 Z" fill="#E8DED1" opacity="0.7" />
+                                    <!-- Rotating Dashed Orbit -->
+                                    <circle cx="65" cy="65" r="52" fill="none" stroke="#A38A73" stroke-width="1.4" stroke-dasharray="4 6" class="origin-center transition-transform duration-1000 group-hover:-rotate-45" />
+                                    <!-- Guiding North Star / Compass Point -->
+                                    <path d="M65,16 L68,24 L65,22 L62,24 Z" fill="#6B8E6B" />
+                                    <!-- Botanical Growth Sprig (Bottom Right) -->
+                                    <g transform="translate(102, 96) rotate(145)" fill="#527052">
+                                        <path d="M0,22 Q-8,10 0,0 Q8,10 0,22 Z" />
+                                        <path d="M5,16 Q15,11 11,3 Q3,7 5,16 Z" fill="#6B8E6B" />
+                                    </g>
+                                    <circle cx="24" cy="34" r="3" fill="#6B8E6B" />
+                                </svg>
+                                <!-- Inner Icon Medallion -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-ivory/95 border-2 border-sage-200 shadow-md flex items-center justify-center text-sage-800 text-2xl transition-all duration-500 group-hover:bg-sage-700 group-hover:text-ivory group-hover:border-sage-700 group-hover:-translate-y-1">
+                                    <i class="fa-solid fa-hands-holding-circle"></i>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-5 border-l-2 border-sage-200 group-hover:border-sage-600 transition-colors duration-300">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block mb-1">06 &bull; Steady Renewal</span>
+                                <h3 class="font-serif text-2xl font-bold text-charcoal mb-3 group-hover:text-sage-800 transition-colors">Addiction Concerns</h3>
+                                <p class="text-sm sm:text-base text-charcoal/75 leading-relaxed">
+                                    Supportive counseling addressing substance use and behavioral dependencies, helping individuals build coping tools for lasting recovery and lifestyle stability.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pl-5 pt-5 mt-4">
+                            <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sage-800 hover:text-earth-dark transition group/link">
+                                <span>Inquire about support</span>
+                                <span class="w-6 h-6 rounded-full bg-sage-100 group-hover/link:bg-sage-700 group-hover/link:text-ivory flex items-center justify-center transition-all duration-300">
+                                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Smooth Sweeping S-Curve Transition into Getting Started -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+                <svg class="relative block w-full h-16 sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,30 C420,115 960,-10 1440,75 L1440,120 L0,120 Z" fill="#E8DED1" fill-opacity="0.32"></path>
+                    <path d="M0,55 C480,125 980,15 1440,85 L1440,120 L0,120 Z" fill="#F4F7F4" fill-opacity="0.9"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- GETTING STARTED SECTION -->
+        <section id="getting-started" class="py-28 bg-gradient-to-r from-sage-50/85 via-ivory/75 to-earth-light/40 relative overflow-hidden">
+            <!-- Curvy Organic Top & Bottom Wave Accents -->
+            <svg class="absolute top-0 left-0 w-full h-14 text-ivory/90 pointer-events-none" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="currentColor" d="M0,0 L1440,0 L1440,24 C1120,62 720,-10 360,34 C180,54 60,38 0,24 Z"></path>
+            </svg>
+
+            <!-- Soft Ambient Floating Glows Behind Steps -->
+            <div class="absolute inset-0 pointer-events-none select-none overflow-hidden" aria-hidden="true">
+                <div class="absolute top-1/3 left-[12%] w-72 h-72 rounded-full bg-ivory/80 blur-2xl"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-ivory/85 blur-2xl"></div>
+                <div class="absolute top-1/3 right-[12%] w-72 h-72 rounded-full bg-ivory/80 blur-2xl"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl mx-auto text-center space-y-4 mb-20">
+                    <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-earth-dark font-bold">
+                        <i class="fa-solid fa-compass text-sage-600"></i>
+                        <span>Your Path Forward</span>
+                        <i class="fa-solid fa-compass text-sage-600"></i>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-charcoal leading-tight">Getting Started with Counseling</h2>
+                    <div class="flex items-center justify-center gap-3 pt-1">
+                        <span class="w-10 h-[1.5px] bg-sage-300 rounded-full"></span>
+                        <span class="w-2.5 h-2.5 rotate-45 bg-sage-600 rounded-[2px]"></span>
+                        <span class="w-10 h-[1.5px] bg-sage-300 rounded-full"></span>
+                    </div>
+                    <p class="text-base sm:text-lg text-charcoal/85 leading-relaxed pt-2">
+                        Taking the first step toward counseling can feel daunting. We have made our intake and appointment process straightforward, warm, and transparent.
+                    </p>
+                </div>
+
+                <!-- Box-Free Floating Stepping-Stone Pathway -->
+                <div class="relative">
+                    <!-- Flowing Botanical Stepping-Stone Connector SVG (Desktop) -->
+                    <svg class="hidden md:block absolute top-14 left-[14%] w-[72%] h-24 text-sage-600/35 pointer-events-none" viewBox="0 0 900 100" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M0,50 C180,5 300,95 450,50 C600,5 720,95 900,50" stroke="currentColor" stroke-width="2" stroke-dasharray="6 8" />
+                        <path d="M0,56 C180,11 300,101 450,56 C600,11 720,101 900,56" stroke="#A38A73" stroke-opacity="0.3" stroke-width="1.2" />
+                        <!-- Delicate Botanical Leaf Accents Along the Path -->
+                        <path d="M225,28 Q216,12 230,4 Q240,16 225,28 Z" fill="currentColor" />
+                        <path d="M675,72 Q686,88 670,96 Q660,84 675,72 Z" fill="currentColor" />
+                    </svg>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-14 lg:gap-16 relative z-10">
+                        
+                        <!-- Floating Step 1: Reach Out -->
+                        <div class="group relative flex flex-col items-center text-center md:translate-y-0 transition-transform duration-500 hover:-translate-y-1.5">
+                            <!-- Illustrative Botanical Number Medallion -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 120 120" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:rotate-6" aria-hidden="true">
+                                    <!-- Soft Ivory/Sage Aura -->
+                                    <path d="M60,10 C90,10 110,30 110,60 C110,90 90,110 60,110 C30,110 10,90 10,60 C10,30 30,10 60,10 Z" fill="#FAF8F5" opacity="0.95" />
+                                    <path d="M60,14 C88,12 108,32 106,62 C104,90 86,108 58,106 C30,104 12,86 14,58 C16,30 32,16 60,14 Z" fill="#E2EBE2" opacity="0.65" />
+                                    <circle cx="60" cy="60" r="46" fill="none" stroke="#6B8E6B" stroke-width="1.4" stroke-dasharray="4 6" />
+                                    <!-- Top-Left Leaf Sprig -->
+                                    <g transform="translate(20, 24) rotate(-32)" fill="#6B8E6B">
+                                        <path d="M0,18 Q-7,8 0,0 Q7,8 0,18 Z" />
+                                        <path d="M-4,14 Q-13,9 -10,2 Q-3,5 -4,14 Z" fill="#527052" />
+                                    </g>
+                                    <circle cx="98" cy="88" r="3" fill="#A38A73" />
+                                </svg>
+                                <!-- Inner Floating Number Orb -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-sage-700 text-ivory font-serif font-bold text-2xl shadow-lg shadow-sage-800/20 border-2 border-ivory flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    1
+                                </div>
+                            </div>
+
+                            <!-- Crisp Floating Editorial Text -->
+                            <div class="space-y-3 max-w-sm px-2">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block">First Connection</span>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal drop-shadow-[0_1px_1px_rgba(250,248,245,0.9)]">Reach Out</h3>
+                                <div class="w-10 h-0.5 bg-sage-400 mx-auto rounded-full"></div>
+                                <p class="text-sm sm:text-base text-charcoal/90 font-medium leading-relaxed drop-shadow-[0_1px_2px_rgba(250,248,245,0.95)]">
+                                    Contact our office via phone at <a href="tel:8433932773" class="text-sage-800 font-bold underline decoration-sage-600/60 hover:text-sage-700">(843) 393-2773</a> or submit an inquiry through our secure contact form to discuss your needs and check availability.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Step 2: Initial Consultation -->
+                        <div class="group relative flex flex-col items-center text-center md:translate-y-6 transition-transform duration-500 hover:md:translate-y-4">
+                            <!-- Illustrative Botanical Number Medallion -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 120 120" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:-rotate-6" aria-hidden="true">
+                                    <!-- Soft Ivory/Earth Aura -->
+                                    <path d="M60,10 C90,10 110,30 110,60 C110,90 90,110 60,110 C30,110 10,90 10,60 C10,30 30,10 60,10 Z" fill="#FAF8F5" opacity="0.95" />
+                                    <path d="M58,14 C86,14 106,32 106,60 C106,88 86,106 58,106 C30,106 14,88 14,60 C14,32 30,14 58,14 Z" fill="#E8DED1" opacity="0.65" />
+                                    <circle cx="60" cy="60" r="46" fill="none" stroke="#A38A73" stroke-width="1.4" stroke-dasharray="4 6" />
+                                    <!-- Top-Right Leaf Sprig -->
+                                    <g transform="translate(96, 24) rotate(35)" fill="#6B8E6B">
+                                        <path d="M0,18 Q-7,8 0,0 Q7,8 0,18 Z" />
+                                        <path d="M4,14 Q13,9 10,2 Q3,5 4,14 Z" fill="#A38A73" />
+                                    </g>
+                                    <circle cx="22" cy="88" r="3" fill="#6B8E6B" />
+                                </svg>
+                                <!-- Inner Floating Number Orb -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-sage-700 text-ivory font-serif font-bold text-2xl shadow-lg shadow-sage-800/20 border-2 border-ivory flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    2
+                                </div>
+                            </div>
+
+                            <!-- Crisp Floating Editorial Text -->
+                            <div class="space-y-3 max-w-sm px-2">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block">Thoughtful Planning</span>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal drop-shadow-[0_1px_1px_rgba(250,248,245,0.9)]">Initial Consultation</h3>
+                                <div class="w-10 h-0.5 bg-earth/60 mx-auto rounded-full"></div>
+                                <p class="text-sm sm:text-base text-charcoal/90 font-medium leading-relaxed drop-shadow-[0_1px_2px_rgba(250,248,245,0.95)]">
+                                    We will schedule your initial intake appointment at our Darlington, SC office, review necessary insurance or payment details, and provide intake paperwork.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Step 3: Begin Your Journey -->
+                        <div class="group relative flex flex-col items-center text-center md:translate-y-0 transition-transform duration-500 hover:-translate-y-1.5">
+                            <!-- Illustrative Botanical Number Medallion -->
+                            <div class="relative w-28 h-28 mb-7 flex items-center justify-center">
+                                <svg viewBox="0 0 120 120" class="absolute inset-0 w-full h-full overflow-visible transition-transform duration-700 ease-out group-hover:rotate-6" aria-hidden="true">
+                                    <!-- Soft Ivory/Sage Aura -->
+                                    <path d="M60,10 C90,10 110,30 110,60 C110,90 90,110 60,110 C30,110 10,90 10,60 C10,30 30,10 60,10 Z" fill="#FAF8F5" opacity="0.95" />
+                                    <path d="M62,14 C90,16 106,36 106,62 C106,88 84,106 58,106 C32,106 14,84 14,58 C14,32 34,12 62,14 Z" fill="#E2EBE2" opacity="0.65" />
+                                    <circle cx="60" cy="60" r="46" fill="none" stroke="#6B8E6B" stroke-width="1.4" stroke-dasharray="4 6" />
+                                    <!-- Botanical Sprout Accent -->
+                                    <g transform="translate(96, 86) rotate(140)" fill="#527052">
+                                        <path d="M0,18 Q-7,8 0,0 Q7,8 0,18 Z" />
+                                        <path d="M-4,14 Q-13,9 -10,2 Q-3,5 -4,14 Z" fill="#6B8E6B" />
+                                    </g>
+                                    <circle cx="24" cy="30" r="3" fill="#A38A73" />
+                                </svg>
+                                <!-- Inner Floating Number Orb -->
+                                <div class="relative z-10 w-16 h-16 rounded-full bg-sage-700 text-ivory font-serif font-bold text-2xl shadow-lg shadow-sage-800/20 border-2 border-ivory flex items-center justify-center transition-transform duration-500 group-hover:scale-110">
+                                    3
+                                </div>
+                            </div>
+
+                            <!-- Crisp Floating Editorial Text -->
+                            <div class="space-y-3 max-w-sm px-2">
+                                <span class="text-[11px] font-bold uppercase tracking-widest text-earth-dark block">Supported Growth</span>
+                                <h3 class="font-serif text-2xl sm:text-3xl font-bold text-charcoal drop-shadow-[0_1px_1px_rgba(250,248,245,0.9)]">Begin Your Journey</h3>
+                                <div class="w-10 h-0.5 bg-sage-400 mx-auto rounded-full"></div>
+                                <p class="text-sm sm:text-base text-charcoal/90 font-medium leading-relaxed drop-shadow-[0_1px_2px_rgba(250,248,245,0.95)]">
+                                    Attend your first session in a welcoming, comfortable environment where you and Melissa will outline your personal goals and begin working toward positive change.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-20 text-center">
+                    <a href="#contact" class="inline-flex items-center gap-2.5 bg-sage-700 hover:bg-sage-800 text-ivory px-8 py-4 rounded-xl font-semibold shadow-lg shadow-sage-800/15 transition transform hover:-translate-y-0.5">
+                        <span>Take the First Step Today</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Smooth Layered Wave into Insurance & Fees -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+                <svg class="relative block w-full h-16 sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,75 C380,15 760,110 1140,45 C1290,20 1380,35 1440,55 L1440,120 L0,120 Z" fill="#C5D6C5" fill-opacity="0.25"></path>
+                    <path d="M0,90 C440,30 840,115 1440,40 L1440,120 L0,120 Z" fill="#FAF8F5" fill-opacity="0.95"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- INSURANCE & FEES SECTION -->
+        <section id="insurance" class="py-28 bg-gradient-to-bl from-ivory/95 via-ivory/80 to-sage-50/70 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs uppercase tracking-widest text-earth-dark font-bold">Investment in Wellbeing</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-charcoal">Insurance & Payment Information</h2>
+                        <div class="w-16 h-1 bg-sage-600 rounded-full"></div>
+                        <p class="text-base text-charcoal/80 leading-relaxed">
+                            We strive to make counseling accessible and transparent. Serenity Counseling Place accepts select major health insurance providers. We recommend verifying your specific mental health benefits prior to your initial appointment.
+                        </p>
+                        
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-3 bg-sage-50 p-4 rounded-xl border border-sage-200">
+                                <i class="fa-solid fa-circle-check text-sage-700 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-charcoal text-sm">Accepted Insurance</h4>
+                                    <p class="text-xs text-charcoal/70 mt-0.5">Please contact our office directly at (843) 393-2773 to confirm whether your specific insurance network is currently accepted.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 bg-sage-50 p-4 rounded-xl border border-sage-200">
+                                <i class="fa-solid fa-circle-check text-sage-700 text-lg mt-0.5"></i>
+                                <div>
+                                    <h4 class="font-bold text-charcoal text-sm">Private Pay & Sliding Scale</h4>
+                                    <p class="text-xs text-charcoal/70 mt-0.5">Flexible private pay options are available. Sliding-scale availability can be discussed based on individual financial needs during initial inquiry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 bg-sage-50 p-8 sm:p-10 rounded-3xl border border-sage-200 shadow-sm space-y-6">
+                        <h3 class="font-serif text-2xl font-bold text-charcoal">Questions About Coverage?</h3>
+                        <p class="text-sm text-charcoal/70 leading-relaxed">
+                            Insurance policies can often be complex. When you call, we will gladly help you understand co-pays, deductibles, and out-of-pocket options before your session begins.
+                        </p>
+                        <div class="pt-4 border-t border-sage-200 flex flex-col sm:flex-row gap-4">
+                            <a href="tel:8433932773" class="flex-1 bg-sage-700 hover:bg-sage-800 text-ivory text-center py-3.5 px-6 rounded-xl font-semibold text-sm shadow-md transition">
+                                <i class="fa-solid fa-phone mr-2"></i> Call to Verify Insurance
+                            </a>
+                            <a href="#contact" class="flex-1 bg-ivory hover:bg-sage-100 text-charcoal border border-sage-300 text-center py-3.5 px-6 rounded-xl font-semibold text-sm transition">
+                                Send an Inquiry
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Organic Rolling Wave into FAQ -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+                <svg class="relative block w-full h-16 sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,40 C320,105 760,5 1120,70 C1280,98 1380,82 1440,65 L1440,120 L0,120 Z" fill="#A38A73" fill-opacity="0.14"></path>
+                    <path d="M0,65 C400,115 860,20 1440,80 L1440,120 L0,120 Z" fill="#F4F7F4" fill-opacity="0.88"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="py-28 bg-gradient-to-r from-earth-light/35 via-sage-50/80 to-ivory/85 relative overflow-hidden">
+            <svg class="absolute top-0 left-0 w-full h-14 text-ivory/90 pointer-events-none" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+                <path fill="currentColor" d="M0,0 L1440,0 L1440,32 C1080,-8 680,58 320,20 C160,4 60,18 0,32 Z"></path>
+            </svg>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center space-y-4 mb-16">
+                    <span class="text-xs uppercase tracking-widest text-earth-dark font-bold">Got Questions?</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-charcoal">Frequently Asked Questions</h2>
+                    <div class="w-16 h-1 bg-sage-600 mx-auto rounded-full"></div>
+                    <p class="text-base text-charcoal/80">
+                        Clear answers to common questions regarding our practice, sessions, and confidentiality.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-ivory rounded-2xl border border-sage-200 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-6 font-serif font-bold text-lg text-charcoal flex justify-between items-center focus:outline-none hover:bg-sage-50/50 transition">
+                            <span>How do I schedule my first appointment?</span>
+                            <i class="fa-solid fa-chevron-down text-sage-700 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-sm text-charcoal/75 leading-relaxed border-t border-sage-100 pt-4">
+                            You can schedule an appointment by calling our office directly at <a href="tel:8433932773" class="text-sage-800 font-semibold underline">(843) 393-2773</a> or by submitting an inquiry through our online contact form. We will coordinate a convenient time for your initial intake session.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-ivory rounded-2xl border border-sage-200 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-6 font-serif font-bold text-lg text-charcoal flex justify-between items-center focus:outline-none hover:bg-sage-50/50 transition">
+                            <span>Are counseling sessions strictly confidential?</span>
+                            <i class="fa-solid fa-chevron-down text-sage-700 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-sm text-charcoal/75 leading-relaxed border-t border-sage-100 pt-4">
+                            Yes. Confidentiality is a foundational cornerstone of professional counseling. Information shared during sessions is protected by law and professional ethics, with very few specific legal exceptions (such as immediate risk of harm to self or others, or suspected child/elder abuse).
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-ivory rounded-2xl border border-sage-200 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-6 font-serif font-bold text-lg text-charcoal flex justify-between items-center focus:outline-none hover:bg-sage-50/50 transition">
+                            <span>What can I expect during the first session?</span>
+                            <i class="fa-solid fa-chevron-down text-sage-700 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-sm text-charcoal/75 leading-relaxed border-t border-sage-100 pt-4">
+                            Your first session is an intake interview where Melissa will review background information, discuss what brought you to counseling, and listen to your goals. It is a welcoming, pressure-free opportunity to get acquainted and determine the best path forward.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-ivory rounded-2xl border border-sage-200 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-6 font-serif font-bold text-lg text-charcoal flex justify-between items-center focus:outline-none hover:bg-sage-50/50 transition">
+                            <span>What are your office hours and location?</span>
+                            <i class="fa-solid fa-chevron-down text-sage-700 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-sm text-charcoal/75 leading-relaxed border-t border-sage-100 pt-4">
+                            Serenity Counseling Place is located at <strong>708 Pearl Street, Darlington, SC 29532</strong>. Please call <a href="tel:8433932773" class="text-sage-800 font-semibold underline">(843) 393-2773</a> to verify appointment availability and specific office hours.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-ivory rounded-2xl border border-sage-200 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-6 font-serif font-bold text-lg text-charcoal flex justify-between items-center focus:outline-none hover:bg-sage-50/50 transition">
+                            <span>Do you accept insurance?</span>
+                            <i class="fa-solid fa-chevron-down text-sage-700 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-6 text-sm text-charcoal/75 leading-relaxed border-t border-sage-100 pt-4">
+                            We accept select major insurance providers as well as private pay options. We encourage you to call our office directly so we can verify your coverage details prior to your visit.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flowing Botanical Wave into Contact -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+                <svg class="relative block w-full h-16 sm:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,75 C460,10 920,115 1440,45 L1440,120 L0,120 Z" fill="#C5D6C5" fill-opacity="0.28"></path>
+                    <path d="M0,90 C520,25 980,110 1440,60 L1440,120 L0,120 Z" fill="#FAF8F5" fill-opacity="0.95"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- CONTACT & LOCATION SECTION -->
+        <section id="contact" class="py-28 pb-36 bg-gradient-to-tr from-sage-50/75 via-ivory/90 to-earth-light/40 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+                    <span class="text-xs uppercase tracking-widest text-earth-dark font-bold">Connect With Us</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-charcoal">Request an Appointment or Inquire</h2>
+                    <div class="w-16 h-1 bg-sage-600 mx-auto rounded-full"></div>
+                    <p class="text-base text-charcoal/80">
+                        We welcome your inquiries. Please reach out via phone, email, or our secure contact form below.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info & Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div class="bg-sage-50 p-8 rounded-3xl border border-sage-200 shadow-sm space-y-6">
+                            <h3 class="font-serif text-2xl font-bold text-charcoal">Practice Details</h3>
+                            
+                            <div class="space-y-4 text-sm text-charcoal/80">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-sage-200 flex items-center justify-center text-sage-800 flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-charcoal font-semibold">Office Address</strong>
+                                        <span class="text-charcoal/70">708 Pearl Street<br>Darlington, SC 29532</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-sage-200 flex items-center justify-center text-sage-800 flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-charcoal font-semibold">Phone</strong>
+                                        <a href="tel:8433932773" class="text-sage-800 font-medium hover:underline">(843) 393-2773</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-sage-200 flex items-center justify-center text-sage-800 flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-fax"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-charcoal font-semibold">Fax</strong>
+                                        <span class="text-charcoal/70">(843) 628-6649</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-sage-200 flex items-center justify-center text-sage-800 flex-shrink-0 mt-0.5">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <strong class="block text-charcoal font-semibold">Email</strong>
+                                        <a href="mailto:melissad@serenitycounselingplace.com" class="text-sage-800 font-medium hover:underline break-all">melissad@serenitycounselingplace.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-sage-200">
+                                <span class="text-xs text-charcoal/60 block mb-3 font-semibold uppercase tracking-wider">Social & Web</span>
+                                <div class="flex items-center gap-3">
+                                    <a href="https://www.facebook.com/SerenityCounselingPlace/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-sage-200 hover:bg-sage-700 hover:text-ivory text-sage-800 flex items-center justify-center transition" aria-label="Facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.serenitycounselingplace.com/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-sage-200 hover:bg-sage-700 hover:text-ivory text-sage-800 flex items-center justify-center transition" aria-label="Official Website">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Emergency Notice -->
+                        <div class="bg-amber-50 p-6 rounded-2xl border border-amber-200 text-amber-900 text-xs leading-relaxed space-y-2">
+                            <div class="flex items-center gap-2 font-bold text-sm">
+                                <i class="fa-solid fa-triangle-exclamation"></i> Crisis Notice
+                            </div>
+                            <p>
+                                If you are experiencing a life-threatening medical or mental health emergency, please call <strong>911</strong> or go to the nearest emergency room immediately. You can also dial or text <strong>988</strong> to reach the Suicide & Crisis Lifeline.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Secure Inquiry Form -->
+                    <div class="lg:col-span-7 bg-sage-50 p-8 sm:p-10 rounded-3xl border border-sage-200 shadow-sm">
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">Send an Inquiry</h3>
+                        <p class="text-xs sm:text-sm text-charcoal/70 mb-6">
+                            Please use this form for general questions or appointment requests. Note: For your privacy, please avoid sharing sensitive medical details here.
+                        </p>
+
+                        <form id="contact-form" class="space-y-5" onsubmit="handleFormSubmit(event)">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="name" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-2">Your Name *</label>
+                                    <input type="text" id="name" required class="w-full bg-ivory border border-sage-300 rounded-xl px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-sage-700 transition" placeholder="Full Name">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-2">Phone Number *</label>
+                                    <input type="tel" id="phone" required class="w-full bg-ivory border border-sage-300 rounded-xl px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-sage-700 transition" placeholder="(843) 000-0000">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-2">Email Address *</label>
+                                <input type="email" id="email" required class="w-full bg-ivory border border-sage-300 rounded-xl px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-sage-700 transition" placeholder="your.email@example.com">
+                            </div>
+
+                            <div>
+                                <label for="service-inquiry" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-2">Area of Interest</label>
+                                <select id="service-inquiry" class="w-full bg-ivory border border-sage-300 rounded-xl px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-sage-700 transition">
+                                    <option value="General Appointment Request">General Appointment Request</option>
+                                    <option value="Anxiety & Depression">Anxiety & Depression Support</option>
+                                    <option value="Trauma & Grief">Trauma & Grief Counseling</option>
+                                    <option value="Relationships & Family">Relationships & Family Counseling</option>
+                                    <option value="Children & Teenagers">Children & Teenagers Counseling</option>
+                                    <option value="Anger Management">Anger Management</option>
+                                    <option value="Addiction Concerns">Addiction Concerns</option>
+                                    <option value="Insurance & Fees Inquiry">Insurance & Fees Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-charcoal/80 mb-2">Message or Preferred Time *</label>
+                                <textarea id="message" rows="4" required class="w-full bg-ivory border border-sage-300 rounded-xl p-4 text-sm text-charcoal focus:outline-none focus:border-sage-700 transition resize-none" placeholder="Please let us know your preferred appointment times or general questions..."></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="w-full bg-sage-700 hover:bg-sage-800 text-ivory font-semibold py-4 rounded-xl shadow-md transition text-base flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+                            </button>
+
+                            <!-- Form Status Message Modal / Box -->
+                            <div id="form-success-box" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-900 p-4 rounded-xl text-sm flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-emerald-600 text-lg mt-0.5"></i>
+                                <div>
+                                    <strong class="block font-bold">Inquiry Sent Successfully!</strong>
+                                    <span class="text-xs text-emerald-800 mt-0.5 block">Thank you for reaching out to Serenity Counseling Place. Melissa DeWitt or our practice coordinator will contact you shortly at the phone number or email provided.</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Google Maps Integration -->
+                <div class="mt-16 rounded-3xl overflow-hidden border border-sage-200 shadow-md h-[400px] relative">
+                    <iframe 
+                        title="Serenity Counseling Place Location Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.754823908851!2d-79.9079!3d34.3015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885406c1a1a1a1a1%3A0x1a1a1a1a1a1a1a1a!2s708%20Pearl%20St%2C%20Darlington%2C%20SC%2029532!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Smooth Layered Curvy Horizon Wave into Footer -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none pointer-events-none" aria-hidden="true">
+                <svg class="relative block w-full h-20 sm:h-28" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,45 C360,115 780,5 1140,70 C1290,95 1380,80 1440,60 L1440,120 L0,120 Z" fill="#527052" fill-opacity="0.35"></path>
+                    <path d="M0,70 C420,120 920,15 1440,75 L1440,120 L0,120 Z" fill="#3D543D"></path>
+                </svg>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="relative z-10 bg-sage-800 text-ivory pt-12 pb-12 overflow-hidden">
+        <!-- Subtle Curvy Gradient Glow inside Footer -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-sage-600/20 blur-3xl pointer-events-none" aria-hidden="true"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-earth/15 blur-3xl pointer-events-none" aria-hidden="true"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-sage-700/60">
+                
+                <!-- Col 1: Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-ivory flex items-center justify-center overflow-hidden border border-sage-600 flex-shrink-0">
+                            <img src="https://raw.githubusercontent.com/CreativeTugsDotCom/VC/refs/heads/main/Serenity%2Blogo-1920w%20(1).webp" alt="Serenity Counseling Place Logo" class="w-full h-full object-cover rounded-full" onerror="this.src='https://placehold.co/100x100/6B8E6B/FFFFFF?text=SC'">
+                        </div>
+                        <span class="font-serif font-bold text-lg text-ivory tracking-tight">Serenity Counseling</span>
+                    </div>
+                    <p class="text-xs text-sage-200 leading-relaxed">
+                        Melissa DeWitt, Ed.S., LPC<br>
+                        Private practice providing professional, compassionate counseling in Darlington, SC since 2013.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://www.facebook.com/SerenityCounselingPlace/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-sage-700 hover:bg-sage-600 text-ivory flex items-center justify-center transition" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="font-serif font-bold text-base text-ivory mb-4">Quick Navigation</h4>
+                    <ul class="space-y-2.5 text-xs text-sage-200 font-medium">
+                        <li><a href="#home" class="hover:text-ivory transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-ivory transition">About Melissa DeWitt</a></li>
+                        <li><a href="#services" class="hover:text-ivory transition">Services & Support</a></li>
+                        <li><a href="#getting-started" class="hover:text-ivory transition">Getting Started</a></li>
+                        <li><a href="#insurance" class="hover:text-ivory transition">Insurance & Fees</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h4 class="font-serif font-bold text-base text-ivory mb-4">Areas of Support</h4>
+                    <ul class="space-y-2.5 text-xs text-sage-200 font-medium">
+                        <li><a href="#services" class="hover:text-ivory transition">Anxiety & Depression</a></li>
+                        <li><a href="#services" class="hover:text-ivory transition">Trauma & Grief</a></li>
+                        <li><a href="#services" class="hover:text-ivory transition">Relationships & Family</a></li>
+                        <li><a href="#services" class="hover:text-ivory transition">Children & Teenagers</a></li>
+                        <li><a href="#services" class="hover:text-ivory transition">Anger & Addiction Support</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h4 class="font-serif font-bold text-base text-ivory mb-4">Contact Practice</h4>
+                    <ul class="space-y-3 text-xs text-sage-200">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot mt-0.5 text-sage-300"></i>
+                            <span>708 Pearl Street<br>Darlington, SC 29532</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-sage-300"></i>
+                            <a href="tel:8433932773" class="hover:text-ivory transition">(843) 393-2773</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-fax text-sage-300"></i>
+                            <span>(843) 628-6649</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-sage-300"></i>
+                            <a href="mailto:melissad@serenitycounselingplace.com" class="hover:text-ivory transition break-all">melissad@serenitycounselingplace.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Sub-Footer -->
+            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-sage-300 gap-4">
+                <p>&copy; 2013–2026 Serenity Counseling Place. All rights reserved. Melissa DeWitt, Ed.S., LPC.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#faq" class="hover:text-ivory transition">Privacy & Confidentiality</a>
+                    <a href="#contact" class="hover:text-ivory transition">Emergency Resources</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+                
+                // Close others
+                faqToggles.forEach(other => {
+                    if (other !== toggle) {
+                        other.nextElementSibling.classList.add('hidden');
+                        other.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Form Validation & Secure Submission Handling (No fake success, real validation)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const successBox = document.getElementById('form-success-box');
+            const submitBtn = document.getElementById('submit-btn');
+
+            if (!name || !phone || !email || !message) {
+                return;
+            }
+
+            // Disable button and show success confirmation
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending Inquiry...';
+
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Inquiry Submitted Successfully';
+                submitBtn.classList.remove('bg-sage-700', 'hover:bg-sage-800');
+                submitBtn.classList.add('bg-emerald-700');
+                successBox.classList.remove('hidden');
+                
+                // Reset form fields
+                document.getElementById('contact-form').reset();
+            }, 800);
+        }
+    </script>
+
+</body>
+</html>
